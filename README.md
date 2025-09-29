@@ -35,7 +35,7 @@ Este proyecto utiliza **Python 3.8+** y requiere las siguientes librerías:
 
 Para instalar dependencias:
 ``` bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn
 ```
 ------------------------------------------------------------------------
 
