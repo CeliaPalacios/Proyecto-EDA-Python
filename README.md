@@ -4,7 +4,7 @@
 
 ## 📖 Descripción
 
-Este proyecto realiza un análisis exploratorio de datos (EDA) a partir de dos datasets relacionads con campañas de maketing de un banco portugues.
+Este proyecto realiza un análisis exploratorio de datos (EDA) a partir de dos datasets relacionads con campañas de maketing de un banco portugues.\
 El objetivo es identificar patrones y factores asociados al éxito de la suscripción de depósitos a plazo, así como explorar características demográficas adicionales de los clientes.
 
 El análisis se divide en tres fases:
