@@ -16,12 +16,34 @@ El análisis se divide en tres fases:
 
 ## 🗂 Estructura del Proyecto
 
-    ├── data/                # Datos crudos y procesados
-    │   ├── bank-additional.csv
-    │   ├── customer-details.xlsx
-    ├── notebooks/           # Notebooks con el análisis
-    │   └── Proyecto_EDA_Python.ipynb
-    ├── README.md            # Informe y conclusiones del proyecto
+/
+├─ data/
+│  ├─ raw/
+│  │  ├─ bank-additional.csv
+│  │  └─ customer-details.xlsx
+│  └─ processed/
+│     ├─ bank_clean.csv
+│     ├─ bank_additional_eda.csv        # (si quieres conservarlo)
+│     └─ merged_eda.csv                 # (o renómbralo a bank_customers_final.csv)
+├─ notebooks/
+│  ├─ 01_proyecto_EDA.ipynb             # (tu Proyecto_EDA_Python renombrado)
+│  └─ 02_preparacion_data_merge.ipynb
+├─ requirements.txt
+└─ README.md
+
+
+------------------------------------------------------------------------
+
+## Diagrama de flujo
+
+data/raw
+   ├─ bank-additional.csv  ──►  01_EDA_bank.ipynb   ──►  data/processed/bank_clean.csv
+   └─ customer-details.xlsx ─►  02_EDA_customers.ipynb ─►  data/processed/customers_clean.csv
+                                                  ▼
+                                   03_EDA_merged.ipynb (merge por id_/ID)
+                                                  ▼
+                                   data/processed/bank_customers_final.csv
+
 
 ------------------------------------------------------------------------
 
